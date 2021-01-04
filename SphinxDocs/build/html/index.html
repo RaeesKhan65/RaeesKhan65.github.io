@@ -1,0 +1,664 @@
+
+<!DOCTYPE html>
+
+<html lang="y">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to DuttLabDB&#39;s documentation! &#8212; DuttLabDB 1.1.1 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="welcome-to-duttlabdb-s-documentation">
+<h1>Welcome to DuttLabDB's documentation!<a class="headerlink" href="#welcome-to-duttlabdb-s-documentation" title="Permalink to this headline">¶</a></h1>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="section" id="here-is-the-main-class-documentation">
+<h2>Here is the main class Documentation<a class="headerlink" href="#here-is-the-main-class-documentation" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<span class="target" id="module-main"></span><dl class="py class">
+<dt id="main.main22">
+<em class="property">class </em><code class="sig-prename descclassname">main.</code><code class="sig-name descname">main22</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#main.main22" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Param</dt>
+<dd class="field-odd"><p>name of data file</p>
+</dd>
+<dt class="field-even">Type</dt>
+<dd class="field-even"><p>string</p>
+</dd>
+</dl>
+<p>This is the main class of the DuttLabDB Project, It contains
+functions for parsing data from all given types of data files
+and uploading them to the SQL DB and backing a copy on onedrive.
+This main file uses this class in a multi-purpose GUI object
+which can upload data to the DB and back it up, download data
+from the onedrive and generate a data report before uploading.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<dl class="py method">
+<dt id="main.main22.CSV_Writer_Txt">
+<code class="sig-name descname">CSV_Writer_Txt</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span></em><span class="sig-paren">)</span><a class="headerlink" href="#main.main22.CSV_Writer_Txt" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function is used to write csv files from the data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Param</dt>
+<dd class="field-odd"><p>Takes data</p>
+</dd>
+<dt class="field-even">Type</dt>
+<dd class="field-even"><p>list</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>none</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>No return, just performs the described function.</p>
+</dd>
+</dl>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="main.main22.CryQuComm">
+<code class="sig-name descname">CryQuComm</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#main.main22.CryQuComm" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function is used to upload data files from the Cryogenic
+Quantum Communication Instrument to the SQL DB and create backup!</p>
+<dl class="field-list simple">
+<dt class="field-odd">Param</dt>
+<dd class="field-odd"><p>Takes only the class params</p>
+</dd>
+<dt class="field-even">Type</dt>
+<dd class="field-even"><p>class arguments</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>none</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>No return, just performs the described function.</p>
+</dd>
+</dl>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="main.main22.image">
+<code class="sig-name descname">image</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#main.main22.image" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function is used to upload image files to the SQL DB and create backup!</p>
+<dl class="field-list simple">
+<dt class="field-odd">Param</dt>
+<dd class="field-odd"><p>Takes only the class params</p>
+</dd>
+<dt class="field-even">Type</dt>
+<dd class="field-even"><p>class arguments</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>none</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>No return, just performs the described function.</p>
+</dd>
+</dl>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="main.main22.rabi_log">
+<code class="sig-name descname">rabi_log</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#main.main22.rabi_log" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function is used to upload rabi log files to the SQL DB and create backup!</p>
+<dl class="field-list simple">
+<dt class="field-odd">Param</dt>
+<dd class="field-odd"><p>Takes only the class params</p>
+</dd>
+<dt class="field-even">Type</dt>
+<dd class="field-even"><p>class arguments</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>none</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>No return, just performs the described function.</p>
+</dd>
+</dl>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="main.main22.rabi_txt">
+<code class="sig-name descname">rabi_txt</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#main.main22.rabi_txt" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function is used to upload rabi text files to the SQL DB and create backup!</p>
+<dl class="field-list simple">
+<dt class="field-odd">Param</dt>
+<dd class="field-odd"><p>Takes only the class params</p>
+</dd>
+<dt class="field-even">Type</dt>
+<dd class="field-even"><p>class arguments</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>none</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>No return, just performs the described function.</p>
+</dd>
+</dl>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="here-is-the-sqlconnection-documentation">
+<h2>Here is the SQLConnection Documentation<a class="headerlink" href="#here-is-the-sqlconnection-documentation" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<span class="target" id="module-SQLConnection"></span><dl class="py class">
+<dt id="SQLConnection.SQL">
+<em class="property">class </em><code class="sig-prename descclassname">SQLConnection.</code><code class="sig-name descname">SQL</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#SQLConnection.SQL" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Param</dt>
+<dd class="field-odd"><p>name</p>
+</dd>
+<dt class="field-even">Type</dt>
+<dd class="field-even"><p>string</p>
+</dd>
+</dl>
+<p>This class interacts with the SQL DB , uploads to the DB, creates tables
+in the DB, and extracts information from the DB.</p>
+<p>This is written based on the Query/Content model, in this model we have
+special functions for each type of data file that return a customized
+query and params to be uploaded. This is decorated with the appropriate
+decorator that establishes the connection to the DB, performs the functions,
+and closes the connection.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<dl class="py method">
+<dt id="SQLConnection.SQL.SQL_create_image_table">
+<code class="sig-name descname">SQL_create_image_table</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#SQLConnection.SQL.SQL_create_image_table" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function is used to create a table to store data from image file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Param</dt>
+<dd class="field-odd"><p>Takes class params.</p>
+</dd>
+<dt class="field-even">Type</dt>
+<dd class="field-even"><p>string</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>none</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>No return, just performs the described function.</p>
+</dd>
+</dl>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="SQLConnection.SQL.SQL_create_log_table">
+<code class="sig-name descname">SQL_create_log_table</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#SQLConnection.SQL.SQL_create_log_table" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function is used to create a table to store data from rabi log file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Param</dt>
+<dd class="field-odd"><p>Takes class params.</p>
+</dd>
+<dt class="field-even">Type</dt>
+<dd class="field-even"><p>string</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>none</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>No return, just performs the described function.</p>
+</dd>
+</dl>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="SQLConnection.SQL.SQL_create_txt_table">
+<code class="sig-name descname">SQL_create_txt_table</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#SQLConnection.SQL.SQL_create_txt_table" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function is used to create a table to store data from rabi text file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Param</dt>
+<dd class="field-odd"><p>Takes class params.</p>
+</dd>
+<dt class="field-even">Type</dt>
+<dd class="field-even"><p>string</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>none</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>No return, just performs the described function.</p>
+</dd>
+</dl>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="SQLConnection.SQL.SQL_extract_log">
+<code class="sig-name descname">SQL_extract_log</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#SQLConnection.SQL.SQL_extract_log" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function is used to extract logfile data from the SQL DB.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Param</dt>
+<dd class="field-odd"><p>Takes class params.</p>
+</dd>
+<dt class="field-even">Type</dt>
+<dd class="field-even"><p>none</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>string,list</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>returns a query string and a list of contents.</p>
+</dd>
+</dl>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="SQLConnection.SQL.SQL_extract_txt">
+<code class="sig-name descname">SQL_extract_txt</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#SQLConnection.SQL.SQL_extract_txt" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function is used to extract textfile data from the SQL DB.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Param</dt>
+<dd class="field-odd"><p>Takes class params.</p>
+</dd>
+<dt class="field-even">Type</dt>
+<dd class="field-even"><p>none</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>string,list</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>returns a query string and a list of contents.</p>
+</dd>
+</dl>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="SQLConnection.SQL.SQL_rabi_log">
+<code class="sig-name descname">SQL_rabi_log</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">params</span></em><span class="sig-paren">)</span><a class="headerlink" href="#SQLConnection.SQL.SQL_rabi_log" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function is used to upload data from rabi log files into the SQL DB.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Param</dt>
+<dd class="field-odd"><p>Takes class params and set of params to be inserted.</p>
+</dd>
+<dt class="field-even">Type</dt>
+<dd class="field-even"><p>list</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>string,list</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>returns a query string and a list of contents.</p>
+</dd>
+</dl>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="SQLConnection.SQL.SQL_rabi_txt">
+<code class="sig-name descname">SQL_rabi_txt</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">params</span></em><span class="sig-paren">)</span><a class="headerlink" href="#SQLConnection.SQL.SQL_rabi_txt" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function is used to upload data from rabi text files into the SQL DB.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Param</dt>
+<dd class="field-odd"><p>Takes class params and set of params to be inserted.</p>
+</dd>
+<dt class="field-even">Type</dt>
+<dd class="field-even"><p>list</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>string,list</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>returns a query string and a list of contents.</p>
+</dd>
+</dl>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="SQLConnection.SQL.decorator_create">
+<code class="sig-name descname">decorator_create</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#SQLConnection.SQL.decorator_create" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function is a decorator for any function that would create tables
+into the DB and is designed in the Query/Content</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="SQLConnection.SQL.decorator_extract">
+<code class="sig-name descname">decorator_extract</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#SQLConnection.SQL.decorator_extract" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function is a decorator for any function that would extract data
+into the DB and is designed in the Query/Content</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="SQLConnection.SQL.decorator_insert">
+<code class="sig-name descname">decorator_insert</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#SQLConnection.SQL.decorator_insert" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function is a decorator for any function that would insert data
+into the DB and is designed in the Query/Content</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="SQLConnection.SQL.image">
+<code class="sig-name descname">image</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">params</span></em><span class="sig-paren">)</span><a class="headerlink" href="#SQLConnection.SQL.image" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function is used to upload data from image files into the SQL DB.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Param</dt>
+<dd class="field-odd"><p>Takes class params and set of params to be inserted.</p>
+</dd>
+<dt class="field-even">Type</dt>
+<dd class="field-even"><p>list</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>string,list</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>returns a query string and a list of contents.</p>
+</dd>
+</dl>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="here-is-the-onedrivestorage-documentation">
+<h2>Here is the OneDriveStorage Documentation<a class="headerlink" href="#here-is-the-onedrivestorage-documentation" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<span class="target" id="module-OneDriveStorage"></span><dl class="py function">
+<dt id="OneDriveStorage.one_drive_authenticaion">
+<code class="sig-prename descclassname">OneDriveStorage.</code><code class="sig-name descname">one_drive_authenticaion</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OneDriveStorage.one_drive_authenticaion" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function authenticates a OneDrive Client to access OneDrive.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Param</dt>
+<dd class="field-odd"><p>Takes no data</p>
+</dd>
+<dt class="field-even">Type</dt>
+<dd class="field-even"><p>none</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>client object</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>returns an authenticated client.</p>
+</dd>
+</dl>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="OneDriveStorage.one_drive_download">
+<code class="sig-prename descclassname">OneDriveStorage.</code><code class="sig-name descname">one_drive_download</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#OneDriveStorage.one_drive_download" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function downloads a file to OneDrive.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Param</dt>
+<dd class="field-odd"><p>Takes file name</p>
+</dd>
+<dt class="field-even">Type</dt>
+<dd class="field-even"><p>string</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>none</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>No return, just performs the described function.</p>
+</dd>
+</dl>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="OneDriveStorage.one_drive_get">
+<code class="sig-prename descclassname">OneDriveStorage.</code><code class="sig-name descname">one_drive_get</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OneDriveStorage.one_drive_get" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function gets a list of all files in the OneDrive.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Param</dt>
+<dd class="field-odd"><p>none</p>
+</dd>
+<dt class="field-even">Type</dt>
+<dd class="field-even"><p>none</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>list of all files in the OneDrive</p>
+</dd>
+</dl>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="OneDriveStorage.one_drive_upload">
+<code class="sig-prename descclassname">OneDriveStorage.</code><code class="sig-name descname">one_drive_upload</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#OneDriveStorage.one_drive_upload" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function uploads a file to OneDrive.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Param</dt>
+<dd class="field-odd"><p>Takes file name</p>
+</dd>
+<dt class="field-even">Type</dt>
+<dd class="field-even"><p>string</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>none</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>No return, just performs the described function.</p>
+</dd>
+</dl>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</dd></dl>
+
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="here-is-the-report-generator-class-documentation">
+<h2>Here is the Report Generator Class Documentation<a class="headerlink" href="#here-is-the-report-generator-class-documentation" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<span class="target" id="module-ReportGenerator"></span><dl class="py class">
+<dt id="ReportGenerator.Report_Generator">
+<em class="property">class </em><code class="sig-prename descclassname">ReportGenerator.</code><code class="sig-name descname">Report_Generator</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ReportGenerator.Report_Generator" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Param</dt>
+<dd class="field-odd"><p>name of data file</p>
+</dd>
+<dt class="field-even">Type</dt>
+<dd class="field-even"><p>string</p>
+</dd>
+</dl>
+<p>This class is designed to take various data files and generate a
+report for the user, so as to aid the user in the decision whether
+the data is worth uploading to the DB.</p>
+<blockquote>
+<div><div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+<dl class="py method">
+<dt id="ReportGenerator.Report_Generator.CryQuComm_report_generator">
+<code class="sig-name descname">CryQuComm_report_generator</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ReportGenerator.Report_Generator.CryQuComm_report_generator" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function generates a report for the Cryogenic Quantum
+Communication data file.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ReportGenerator.Report_Generator.image_report_generator">
+<code class="sig-name descname">image_report_generator</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ReportGenerator.Report_Generator.image_report_generator" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function generates a report for an image data file.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ReportGenerator.Report_Generator.rabi_report_generator">
+<code class="sig-name descname">rabi_report_generator</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ReportGenerator.Report_Generator.rabi_report_generator" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function generates a report from rabi files, taking data
+from the text and log file.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="#">DuttLabDB</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, RaeesKhan.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
